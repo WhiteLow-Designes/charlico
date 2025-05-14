@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlico | Music</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <hr>
+    <div class="branding">
+      <p>
+      <h1>Charlico</h1>
+      </p>
+    </div>
+    <hr>
+    <center>
+      <nav>
+        | <a href="index.html">Home</a> |
+        <a href="about.html">Über</a> |
+        <a href="musik.html" class="active">Musik</a> |
+      </nav>
+    </center>
+  </header>
+  <div class="container">
+    <div class="left">
+      <h2 style="text-align:center;">WhiteLowCustom<br>Designs</h2>
+<div class="merch-container">
+  <div class="merch-item">
+    <img src="assets/media/va-fi_1/max.-ep/max.-ep.png" alt="MAX EP Cover" class="zoom-img">
+  </div>
+  <div class="merch-item">
+    <img src="assets/media/va-fi_1/va-fi/file.png" alt="VA-FI Cover" class="zoom-img">
+  </div>
+</div>
+
+<!-- Lightbox Popup-Container -->
+<div id="img-popup" class="popup hidden">
+  <span class="close-btn" onclick="closePopup()">&times;</span>
+  <img id="popup-img" src="" alt="Vergrößertes Bild">
+</div>
+    </div>
+    <div class="main">
+      <div class="snippet">
+        <h1>Maximus EP</h1>
+        <div class="merch-container">
+          <div class="merch-item">
+            <img src="assets/media/va-fi_1/max.-ep/max.-ep.png">
+            <h4>Maximus EP</h4>
+            <p><b>Preis:</b> 14,99 €</p>
+            <a href="#" class="btn-buy">Jetzt kaufen</a>
+          </div>
+        </div>
+        <p>
+          <center>
+            <select id="playlist1">
+              <option value="assets/media/va-fi_1/max.-ep/MEP 1. Maximum Risk .wav">Charlico - Maximum Risk</option>
+              <option value="assets/media/va-fi_1/max.-ep/MEP 2. Maximus .wav">Charlico - Maximus</option>
+              <option value="assets/media/va-fi_1/max.-ep/MEP 3. El Patrón.wav">Charlico - El Patrón</option>
+              <option value="assets/media/va-fi_1/max.-ep/MEP 4. Rein oder Raus .wav">Charlico - Rein oder Raus</option>
+              <option value="assets/media/va-fi_1/max.-ep/MEP 5. Eines Tages .wav">Charlico - Eines Tages</option>
+              <option value="assets/media/va-fi_1/max.-ep/MEP 6. Outro_ Letzte Chance.wav">Charlico - Outro (Letzte Chance)</option>
+          </select>
+        </center>
+        </p>
+        <audio id="player1" hidden>
+          <source src="assets/media.mp3" type="audio/mpeg">
+          Dein Browser unterstützt kein Audio.
+        </audio>
+        <h5>!!! Snippets (je max. 10 Sekunden) !!!</h5>
+      </div>
+      <br>
+      <hr>
+      <div class="snippet">
+        <h1>Von Anfang, für Immer!</h1>
+        <div class="merch-container">
+
+          <div class="merch-item">
+            <img src="assets/media/va-fi_1/va-fi/file.png">
+            <h4>Von Anfang, für immer!</h4>
+            <p><b>Preis:</b> 19,99 €</p>
+            <a href="#" class="btn-buy">Jetzt kaufen</a>
+          </div>
+        </div>
+        <p>
+          <select id="playlist2" class="playlist">
+            <option value="assets/media/va-fi_1/va-fi/1. Intro - Charlico Nr 1 .wav">Charlico – Intro Nr.1</option>
+            <option value="assets/media/va-fi_1/va-fi/2. 100 Bars Hustle und Flow .wav">Charlico – 100 Bars Hustle und Flow</option>
+            <option value="assets/media/va-fi_1/va-fi/3. Offensive .wav">Charlico – Offensive</option>
+            <option value="assets/media/va-fi_1/va-fi/4. Schwule Mcs .wav">Charlico – Schwule Mcs</option>
+            <option value="assets/media/va-fi_1/va-fi/5. Immer wenn der Mond scheint .wav">Charlico – Immer wenn der Mond scheint</option>
+            <option value="assets/media/va-fi_1/va-fi/6. Batzen _ Lila Scheine .wav">Charlico – Batzen _ Lila Scheine</option>
+            <option value="assets/media/va-fi_1/va-fi/7. Von Anfang für immer  .wav">Charlico – Von Anfang für immer</option>
+            <option value="assets/media/va-fi_1/va-fi/8. MVP .wav">Charlico – MVP</option>
+            <option value="assets/media/va-fi_1/va-fi/9. Blade.wav">Charlico – Blade</option>
+            <option value="assets/media/va-fi_1/va-fi/10. Blutiger Pfad.wav">Charlico – Blutiger Pfad</option>
+            <option value="assets/media/va-fi_1/va-fi/11. Zahltag .wav">Charlico – Zahltag</option>
+            <option value="assets/media/va-fi_1/va-fi/12. Rap Phänomen.wav">Charlico – Rap Phänomen</option>
+            <option value="assets/media/va-fi_1/va-fi/13. Kommt mich holn.wav">Charlico – Kommt mich holn</option>
+            <option value="assets/media/va-fi_1/va-fi/14. Penalty .wav">Charlico – Penalty</option>
+            <option value="assets/media/va-fi_1/va-fi/15. Raps Ballon D`or .wav">Charlico – Raps Ballon D’or</option>
+            <option value="assets/media/va-fi_1/va-fi/16. Outro_ Das Resümee.wav">Charlico – Outro_ Das Resümee</option>
+          </select>
+        </center>
+      </p>
+      <audio id="player2" hidden>
+        <source src="assets/media.mp3" type="audio/mpeg">
+        Dein Browser unterstützt kein Audio.
+      </audio>
+      <h5>!!! Snippets (je max. 10 Sekunden) !!!</h5>
+      </div>
+      <br>
+    </div>   
+    <div class="right">
+
+    </div>
+  </div>
+  <script>
+    function setupSnippet(playerId, playlistId) {
+      const player = document.getElementById(playerId);
+      const playlist = document.getElementById(playlistId);
+      let timeout;
+  
+      playlist.addEventListener('change', () => {
+        const file = playlist.value;
+        clearTimeout(timeout);
+        player.src = file;
+        player.load();
+        player.play();
+  
+        timeout = setTimeout(() => {
+          player.pause();
+        }, 30000);
+      });
+    }
+  
+    // Initialisiere beide Snippets
+    setupSnippet("player1", "playlist1");
+    setupSnippet("player1", "playlist2");
+  </script>  
+  <footer class="footer">
+    <h4>
+      <p>&copy; 2025<br> <a href="#">Charlico</a> / <ahref="https: //steamcommunity.com/id/whitelownrg/">
+          WhiteLowCustoms</a><br>Alle Rechte vorbehalten.</p>
+      <nav class="footer-nav">
+        <a href="impressum.html">-Impressum-</a> |
+        <a href="agb.html">-AGB-</a> |
+        <a href="nutzungsbedingungen.html">-Nutzungsbedingungen-</a> |
+        <a href="kontakt.html">-Kontakt-</a>
+      </nav>
+    </h4>
+  </footer>
+</body>
+</html>

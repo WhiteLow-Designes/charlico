@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlico | Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header"><hr><br>
+        <div class="branding">
+            <h1>Charlico</h1>
+            <p class="tagline">Von Anfang, für immer!</p>
+        </div>
+        <hr>
+    <center>
+      <nav>
+        | <a href="index.html">Home</a> |
+          <a href="about.html">Über</a> |
+          <a href="musik.html">Musik</a> |
+      </nav>
+    </center>
+    </header>
+    <div class="container">
+        <div class="left">
+            <nav>
+              <a href="https://whitelow-designes.github.io/HTML-Customs/">WhiteLow-Designs</a><br>
+              <a href="https://www.youtube.com/">YouTube</a><br>
+              <a href="https://www.instagram.com">Instagram</a><br>
+              <a href="https://www.facebook.com/home.php">Facebook</a><br>
+              <a href="https://www.google.com">Google</a><br>
+            </nav>
+          </div>
+        <div class="main">
+            <div>
+                <center>
+                    <h1><u><b>Kontakt</b></u></h1>
+                </center>
+            </div>
+            <hr>
+            <hr>
+            <br>
+            <div>
+                <center>
+                    <form class="kontakt-formular" action="#" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Dein Name" required><br><br>
+                
+                        <label for="email">E-Mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="dein@email.de" required><br><br>
+                
+                        <label for="betreff">Betreff:</label><br>
+                        <input type="text" id="betreff" name="betreff" placeholder="Worum geht's?" required><br><br>
+                
+                        <label for="nachricht">Nachricht:</label><br>
+                        <textarea id="nachricht" name="nachricht" rows="6" placeholder="Schreib deine Nachricht..."
+                            required></textarea><br><br>
+                
+                        <button type="submit">Absenden</button>
+                    </form>
+                </center>
+            </div>
+            <br>
+        </div>
+        <div class="right">
+            <section class="faq">
+                <h2>(FAQ)<br>Häufig gestellte Fragen</h2><hr><br>
+                <details>
+                  <summary>🎤 Wer ist Charlico?</summary>
+                  <p>Charlico ist ein aufstrebender Rapper mit einem einzigartigen Stil, geprägt von Straßenkultur und tiefgründigen Texten.</p>
+                </details>
+                <details>
+                  <summary>📀 Wo finde ich seine Musik?</summary>
+                  <p>Alle Songs sind über die Musikseite dieser Website sowie auf YouTube und Spotify abrufbar.</p>
+                </details>
+                <details>
+                  <summary>🕒 Wann erscheint das nächste Album?</summary>
+                  <p>Das nächste Album "Goldrausch" erscheint im Herbst 2025. Bleib auf dem Laufenden über die Startseite!</p>
+                </details>
+                <details>
+                  <summary>👕 Wo kann ich Charlico-Merch kaufen?</summary>
+                  <p>Im Bereich <a href="merch.html">Merch</a> findest du alle offiziellen Produkte – Hoodies, Caps und mehr.</p>
+                </details>
+                <details>
+                  <summary>🎶 Kann ich die Snippets kostenlos nutzen?</summary>
+                  <p>Die 10-Sekunden-Snippets auf dieser Website sind nur für Hörproben gedacht – keine kommerzielle Nutzung erlaubt.</p>
+                </details>
+                <details>
+                  <summary>📩 Wie kann ich Charlico kontaktieren?</summary>
+                  <p>Nutze das <a href="kontakt.html">Kontaktformular</a> oder schreib an die Management-Adresse im Impressum.</p>
+                </details>
+                <details>
+                  <summary>📷 Gibt es exklusive Einblicke hinter die Kulissen?</summary>
+                  <p>Ja! Folge Charlico auf Instagram und YouTube für exklusive Studioaufnahmen und Backstage-Videos.</p>
+                </details>
+                <details>
+                  <summary>📅 Tritt Charlico live auf?</summary>
+                  <p>Aktuell sind mehrere Auftritte für 2025 in Planung. Alle Infos findest du demnächst unter „Live-Termine“.</p>
+                </details>
+                <details>
+                  <summary>💬 Unterstützt ihr Fanprojekte oder Reactions?</summary>
+                  <p>Ja, solange die Inhalte fair bleiben. Markiere Charlico auf Social Media – er reagiert oft auf Fan-Inhalte!</p>
+                </details>
+                <details>
+                  <summary>🔒 Was passiert mit meinen Kontaktdaten?</summary>
+                  <p>Deine Daten werden vertraulich behandelt. Details findest du in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+                </details>
+              </section>              
+        </div>
+    </div>
+    <script>
+        const player = document.getElementById('player');
+        const playlist = document.getElementById('playlist');
+        const youtubeLink = document.getElementById('youtubeLink');
+
+        // Audio auf 10 Sekunden begrenzen
+        player.addEventListener('play', () => {
+            setTimeout(() => {
+                player.pause();
+            }, 10000); // 10 Sekunden
+        });
+
+        // Song-Auswahl im Dropdown
+        playlist.addEventListener('change', () => {
+            const selected = playlist.value;
+            player.src = selected;
+            player.load();
+            player.play();
+
+            // Optional: dynamischer YouTube-Link
+            const title = playlist.options[playlist.selectedIndex].text;
+            youtubeLink.href = "https://www.youtube.com/results?search_query=" + encodeURIComponent(title);
+        });
+    </script>
+    <footer class="footer">
+        <h4>
+            <p>&copy; 2025<br> <a href="#">Charlico</a> / <ahref="https://steamcommunity.com/id/whitelownrg/">WhiteLowCustoms</a><br>Alle Rechte vorbehalten.</p>
+                <nav class="footer-nav">
+                    <a href="impressum.html">-Impressum-</a> |
+                    <a href="agb.html">-AGB-</a> |
+                    <a href="nutzungsbedingungen.html">-Nutzungsbedingungen-</a> |
+                    <a href="kontakt.html" class="active">-Kontakt-</a>
+                </nav>
+            </h4>
+    </footer>
+</body>
+</html>

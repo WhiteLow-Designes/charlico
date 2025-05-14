@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlico | Nutzungsbedingungen</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header"><hr><br>
+    <div class="branding">
+        <h1>Charlico</h1>
+        <p class="tagline">Von Anfang, für immer!</p>
+    </div>
+    <hr>
+<center>
+  <nav>
+    | <a href="index.html">Home</a> |
+      <a href="about.html">Über</a> |
+      <a href="musik.html">Musik</a> |
+  </nav>
+</center>
+</header>
+  <div class="container">
+    <div class="left">
+      
+    </div>
+    <div class="main">
+    </div>
+    <div class="right">
+      
+  </div>
+  <script>
+    const player = document.getElementById('player');
+    const playlist = document.getElementById('playlist');
+    const youtubeLink = document.getElementById('youtubeLink');
+  
+    // Audio auf 10 Sekunden begrenzen
+    player.addEventListener('play', () => {
+      setTimeout(() => {
+        player.pause();
+      }, 10000); // 10 Sekunden
+    });
+  
+    // Song-Auswahl im Dropdown
+    playlist.addEventListener('change', () => {
+      const selected = playlist.value;
+      player.src = selected;
+      player.load();
+      player.play();
+  
+      // Optional: dynamischer YouTube-Link
+      const title = playlist.options[playlist.selectedIndex].text;
+      youtubeLink.href = "https://www.youtube.com/results?search_query=" + encodeURIComponent(title);
+    });
+  </script>
+  <footer class="footer">
+    <h4>
+        <p>&copy; 2025<br> <a href="#">Charlico</a> / <ahref="https://steamcommunity.com/id/whitelownrg/">WhiteLowCustoms</a><br>Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="impressum.html">-Impressum-</a> |
+                <a href="agb.html">-AGB-</a> |
+                <a href="nutzungsbedingungen.html" class="active">-Nutzungsbedingungen-</a> |
+                <a href="kontakt.html">-Kontakt-</a>
+            </nav>
+        </h4>
+</footer>
+</body>
+</html>
