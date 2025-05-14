@@ -1,5 +1,7 @@
 body {
-  background-color: #000;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
   color: #ffd700;
   font-family: SubwayHaze, sans-serif;
   margin: 0;
