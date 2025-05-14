@@ -1,0 +1,257 @@
+body {
+  background-color: #000;
+  color: #ffd700;
+  font-family: SubwayHaze, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Dopestyle';
+  src: url('Dopestyle.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RomanceFatal';
+  src: url('Romance Fatal Serif JC Fonts.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SakituBaelah';
+  src: url('Sakitu Baelah Clean.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SubwayHaze';
+  src: url('Subway_Haze_1.1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'RomanceFatal', sans-serif;
+  font-size: 84px;
+}
+
+h2 {
+  font-family: 'SakituBaelah', sans-serif;
+  font-size: 54px;
+}
+
+h3 {
+  font-family: 'RomanceFatal', sans-serif;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: 'SubwayHaze', sans-serif;
+  font-size: 18px;
+}
+
+h5 {
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+}
+header {
+  text-align: center;
+  padding: 10px;
+  border-right: 2px solid #ffd700;
+  border-left: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #ffd700;
+}
+header {
+  margin: 0;
+  font-size: 2em;
+}
+nav {
+  text-align: center;
+  padding: 5px;
+  font-family: 'SubwayHaze', sans-serif;
+  font-size: 20px;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  border-top: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+  list-style: none;
+}
+.right {
+  width: 20%;
+  padding: 20px;
+  border-right: 2px solid #ffd700;
+  border-left: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #ffd700;
+}
+.left {
+  width: 20%;
+  padding: 20px;
+  border-right: 2px solid #ffd700;
+  border-left: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #ffd700;
+}
+.main {
+  height: auto;
+  width: 80%;
+  padding-left: 55px;
+  padding-right: 55px;
+  border-right: 2px solid #ffd700;
+  border-left: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #ffd700;
+  background-color: #080808;
+  list-style: none;
+}
+.main,
+.left,
+.right {
+  min-height: 400px;
+}
+hr {
+  border: none;
+  border-top: 2px solid #ffd700;
+  margin: 10px 0;
+}
+.btn-yt {
+  background-color: #ffd700;
+  color: #080808;
+  padding: 10px;
+  border: 2px solid #080808;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-yt:hover, a:hover {
+  background-color: #ffd700;
+  color: #0f0;
+  border-color: #0f0;
+}
+
+a:hover {
+  color: #b4b4f0;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: white;
+}
+ul li a {
+  color: #8a2be2;
+}
+.snippet {
+  text-align: center;
+  margin-top: 10px;
+}
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  border-right: 2px solid #ffd700;
+  border-left: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #ffd700;
+}
+audio {
+  width: 100%;
+}
+.merch-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.merch-item {
+  background-color: #111;
+  border: 1px solid gold;
+  border-radius: 10px;
+  width: 250px;
+  padding: 1em;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 10px #ffd70033;
+  list-style: none;
+}
+
+.merch-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+  list-style: none;
+}
+
+.btn-buy {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  margin-top: 0.5em;
+  background-color: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-buy:hover {
+  background-color: #e6c200;
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup img {
+  max-width: 85%;
+  max-height: 85%;
+  border: 3px solid gold;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px; right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav a.active {
+  color: gold;
+  border-bottom: 2px solid gold;
+  font-weight: bold;
+}
+
