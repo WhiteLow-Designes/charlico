@@ -173,7 +173,11 @@ footer {
   border-top: 2px solid #ffd700;
 }
 audio {
-  width: 100%;
+  width: 50%;
+  background-color: transparent;
+  color: #ffd700;
+  border: 1px solid gold;
+  border-radius: 10px;
 }
 .merch-container {
   display: flex;
