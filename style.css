@@ -74,6 +74,7 @@ header {
   font-size: 2em;
 }
 nav {
+  background-color: #00000099;
   text-align: center;
   padding: 5px;
   font-family: 'SubwayHaze', sans-serif;
@@ -85,12 +86,14 @@ nav a {
   text-decoration: none;
 }
 .container {
+  background-color: #00000099;
   display: flex;
   border-top: 2px solid #ffd700;
   border-bottom: 2px solid #ffd700;
   list-style: none;
 }
 .right {
+  background-color: #00000099;
   width: 20%;
   padding: 20px;
   border-right: 2px solid #ffd700;
@@ -99,6 +102,7 @@ nav a {
   border-top: 2px solid #ffd700;
 }
 .left {
+  background-color: #00000099;
   width: 20%;
   padding: 20px;
   border-right: 2px solid #ffd700;
@@ -107,6 +111,7 @@ nav a {
   border-top: 2px solid #ffd700;
 }
 .main {
+  background-color: #00000099;
   height: auto;
   width: 80%;
   padding-left: 55px;
@@ -115,7 +120,6 @@ nav a {
   border-left: 2px solid #ffd700;
   border-bottom: 2px solid #ffd700;
   border-top: 2px solid #ffd700;
-  background-color: #080808;
   list-style: none;
 }
 .main,
